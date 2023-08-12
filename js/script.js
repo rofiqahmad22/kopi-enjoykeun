@@ -37,3 +37,10 @@ document.addEventListener("click", function (event) {
     searchForm.classList.remove("active");
   }
 });
+
+// form submit button
+const formButton = document.querySelector("#btn-submit");
+
+document.querySelector("#btn-submit").onclick = (event) => {
+  event.preventDefault();
+};
