@@ -202,7 +202,7 @@ body {
 
 .about,
 .menu,
-.product,
+.products,
 .contact {
   padding: 8rem 7% 1.4rem;
 }
@@ -303,7 +303,7 @@ body {
   text-align: center;
   border: 1px solid #eee;
   padding: 2rem;
-  border-radius: 0.4rem;
+  border-radius: 2%;
 }
 
 .products .product-icons {
