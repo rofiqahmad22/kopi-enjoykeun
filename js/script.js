@@ -44,3 +44,23 @@ const formButton = document.querySelector("#btn-submit");
 document.querySelector("#btn-submit").onclick = (event) => {
   event.preventDefault();
 };
+
+// togle class active shopping cart
+const shoppingCart = document.querySelector(".shopping-cart");
+
+document.querySelector("#shopping-cart-button").onclick = (event) => {
+  shoppingCart.classList.toggle("active");
+  event.preventDefault();
+};
+
+// click outside shopping cart
+const shoppingCartButton = document.querySelector("#shopping-cart-button");
+
+document.addEventListener("click", function (event) {
+  if (
+    !shoppingCartButton.contains(event.target) &&
+    !shoppingCart.contains(event.target)
+  ) {
+    shoppingCart.classList.remove("active");
+  }
+});
