@@ -518,6 +518,63 @@ footer .credit a {
   font-weight: 700;
 }
 
+/* modal box */
+/* item detail */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-container {
+  position: relative;
+  background-color: #fff;
+  color: var(--background);
+  margin: 13% auto;
+  padding: 1.2rem;
+  border: 1px solid #666;
+  width: 75%;
+}
+
+.modal-container .close-icon {
+  position: absolute;
+  right: 1rem;
+}
+.modal-content {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.modal-content img {
+  height: 20rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+.modal-content p {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  margin-top: 1.2rem;
+}
+
+.modal-content a {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  width: 12rem;
+  padding: 1rem 1rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: var(--primary);
+  border-radius: 0.4rem;
+}
+
 /* media queries */
 
 /* laptop */
